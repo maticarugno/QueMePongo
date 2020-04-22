@@ -1,8 +1,6 @@
 import categoriasDePrendas.CategoriaPrenda;
 import excepciones.DatoNecesarioException;
 import excepciones.TipoCategoriaNoCoincidenException;
-import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 import telas.Tela;
 import tiposDePrendas.TipoPrenda;

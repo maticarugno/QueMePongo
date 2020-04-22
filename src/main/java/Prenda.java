@@ -18,7 +18,7 @@ public class Prenda {
         if(tela==null){throw new DatoNecesarioException("La tela de la prenda no puede estar vacio");}
         if(color1==null){throw new DatoNecesarioException("El color primario de la prenda no puede estar vacio");}
 
-        if (tipoPrenda.categoria() != categoria) {
+        if (tipoPrenda.categoriaPrenda != categoria) {
             throw new TipoCategoriaNoCoincidenException("El tipo de prenda no coincide con la categoria");
         }
 
@@ -28,7 +28,4 @@ public class Prenda {
         this.colorPrimario = color1;
         this.colorSecundario = color2;
     }
-
-
-
 }
