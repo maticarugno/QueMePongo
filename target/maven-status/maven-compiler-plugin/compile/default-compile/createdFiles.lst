@@ -2,3 +2,4 @@ tiposDePrendas/TipoPrenda.class
 Prenda.class
 excepciones/DatoNecesarioException.class
 categoriasDePrendas/CategoriaPrenda.class
+BuilderPrenda.class
