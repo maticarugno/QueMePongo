@@ -1,9 +1,11 @@
-import categoriasDePrendas.CategoriaPrenda;
+package prendas;
+
+import atributosPrenda.CategoriaPrenda;
 import excepciones.DatoNecesarioException;
 import excepciones.TipoCategoriaNoCoincidenException;
-import telas.Tela;
-import tiposDePrendas.TipoPrenda;
-import tramas.Trama;
+import atributosPrenda.Tela;
+import atributosPrenda.TipoPrenda;
+import atributosPrenda.Trama;
 
 public class BuilderPrenda {
 

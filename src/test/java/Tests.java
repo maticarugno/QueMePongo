@@ -1,11 +1,14 @@
-import categoriasDePrendas.CategoriaPrenda;
+import atributosPrenda.CategoriaPrenda;
 import excepciones.DatoNecesarioException;
 import excepciones.TipoCategoriaNoCoincidenException;
-import org.junit.Assert;
 import org.junit.Test;
-import telas.Tela;
-import tiposDePrendas.TipoPrenda;
-import tramas.Trama;
+import prendas.BuilderPrenda;
+import prendas.Prenda;
+import atributosPrenda.Tela;
+import atributosPrenda.TipoPrenda;
+import uniformes.Sastre;
+import uniformes.SastreSanJuan;
+import uniformes.Uniforme;
 
 public class Tests {
     CategoriaPrenda calzado = CategoriaPrenda.CALZADO;
@@ -39,6 +42,12 @@ public class Tests {
         remera.colorPrimario("blanco");
         remera.tela(Tela.ALGODON);
         Prenda miRemera = remera.guardarPrenda();
+    }
+
+    @Test
+    public void creoUnUniforme(){
+        Sastre sastreSanJuan = new SastreSanJuan();
+        Uniforme uniforme = Uniforme.fabricar(sastreSanJuan);
     }
 
 

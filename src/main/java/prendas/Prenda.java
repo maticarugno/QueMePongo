@@ -1,7 +1,9 @@
-import categoriasDePrendas.CategoriaPrenda;
-import telas.Tela;
-import tiposDePrendas.TipoPrenda;
-import tramas.Trama;
+package prendas;
+
+import atributosPrenda.CategoriaPrenda;
+import atributosPrenda.Tela;
+import atributosPrenda.TipoPrenda;
+import atributosPrenda.Trama;
 
 public class Prenda {
     TipoPrenda tipoPrenda;

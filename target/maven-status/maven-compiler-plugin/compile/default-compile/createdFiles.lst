@@ -1,5 +1,11 @@
-tiposDePrendas/TipoPrenda.class
-Prenda.class
+uniformes/SastreSanJuan.class
+atributosPrenda/Tela.class
+atributosPrenda/TipoPrenda.class
 excepciones/DatoNecesarioException.class
-categoriasDePrendas/CategoriaPrenda.class
-BuilderPrenda.class
+uniformes/Sastre.class
+prendas/BuilderPrenda.class
+uniformes/Uniforme.class
+uniformes/SastreJohnson.class
+prendas/Prenda.class
+atributosPrenda/Trama.class
+atributosPrenda/CategoriaPrenda.class

@@ -1,11 +1,13 @@
-package tiposDePrendas;
+package atributosPrenda;
 
-import categoriasDePrendas.CategoriaPrenda;
+import atributosPrenda.CategoriaPrenda;
 
 public enum TipoPrenda {
 
     ZAPATO(CategoriaPrenda.CALZADO),
+    ZAPATILLA(CategoriaPrenda.CALZADO),
     REMERA(CategoriaPrenda.SUPERIOR),
+    CHOMBA(CategoriaPrenda.SUPERIOR),
     CAMISA(CategoriaPrenda.SUPERIOR),
     PANTALON(CategoriaPrenda.INFERIOR),
     GORRA(CategoriaPrenda.ACCESORIO);
