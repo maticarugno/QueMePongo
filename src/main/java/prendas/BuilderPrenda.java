@@ -29,7 +29,11 @@ public class BuilderPrenda {
             this.tela = tela;
         }
         public void trama(Trama trama){
-            this.trama = trama;
+            if(trama==null){
+                this.trama = Trama.LISA;
+            }else{
+                this.trama = trama;
+            }
         }
         public void colorPrimario(String colorPrimario){
             if(colorPrimario==null){throw new DatoNecesarioException("El color primario de la prenda no puede estar vacio");}
