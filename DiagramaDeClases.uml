@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>prendas</OriginalElement>
+  <nodes>
+    <node x="454.99999999999994" y="237.0">atributosPrenda.TipoPrenda</node>
+    <node x="85.1869047619046" y="856.0">prendas.BuilderPrenda</node>
+    <node x="458.9254608294932" y="600.0">prendas.Prenda</node>
+    <node x="35.99999999999994" y="273.0">atributosPrenda.Tela</node>
+    <node x="539.9254608294932" y="976.5">uniformes.Sastre</node>
+    <node x="757.9958333333334" y="1261.0">uniformes.Uniforme</node>
+    <node x="237.99999999999994" y="285.0">atributosPrenda.Trama</node>
+    <node x="182.6869047619046" y="1273.5">uniformes.SastreSanJuan</node>
+    <node x="383.67546082949315" y="0.0">atributosPrenda.CategoriaPrenda</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="prendas.Prenda" target="atributosPrenda.TipoPrenda">
+      <point x="17.624999999999943" y="-88.0" />
+      <point x="617.5504608294932" y="580.0" />
+      <point x="596.0" y="580.0" />
+      <point x="0.0" y="136.5" />
+    </edge>
+    <edge source="uniformes.SastreSanJuan" target="atributosPrenda.TipoPrenda">
+      <point x="111.85714285714289" y="-52.0" />
+      <point x="425.0440476190475" y="1241.0" />
+      <point x="851.1202188940092" y="1241.0" />
+      <point x="851.1202188940092" y="560.0" />
+      <point x="708.8" y="560.0" />
+      <point x="112.80000000000001" y="136.5" />
+    </edge>
+    <edge source="prendas.BuilderPrenda" target="atributosPrenda.TipoPrenda">
+      <point x="76.0" y="-172.5" />
+      <point x="313.1869047619046" y="806.0" />
+      <point x="400.26236559139784" y="806.0" />
+      <point x="400.26236559139784" y="580.0" />
+      <point x="539.5999999999999" y="580.0" />
+      <point x="-56.39999999999998" y="136.5" />
+    </edge>
+    <edge source="uniformes.SastreSanJuan" target="atributosPrenda.CategoriaPrenda">
+      <point x="-111.85714285714289" y="-52.0" />
+      <point x="201.3297619047617" y="1241.0" />
+      <point x="0.0" y="1241.0" />
+      <point x="0.0" y="197.0" />
+      <point x="402.9611751152074" y="197.0" />
+      <point x="-115.71428571428572" y="88.5" />
+    </edge>
+    <edge source="prendas.Prenda" target="atributosPrenda.Trama">
+      <point x="-17.625000000000057" y="-88.0" />
+      <point x="582.3004608294932" y="530.0" />
+      <point x="410.37499999999994" y="530.0" />
+      <point x="73.875" y="88.5" />
+    </edge>
+    <edge source="atributosPrenda.TipoPrenda" target="atributosPrenda.CategoriaPrenda">
+      <point x="-70.49999999999994" y="-136.5" />
+      <point x="525.5" y="217.0" />
+      <point x="518.6754608294932" y="217.0" />
+      <point x="5.6843418860808015E-14" y="88.5" />
+    </edge>
+    <edge source="uniformes.Sastre" target="prendas.Prenda">
+      <point x="0.0" y="-52.0" />
+      <point x="670.4254608294932" y="836.0" />
+      <point x="623.4254608294932" y="836.0" />
+      <point x="23.5" y="88.0" />
+    </edge>
+    <edge source="prendas.BuilderPrenda" target="atributosPrenda.Trama">
+      <point x="-15.200000000000045" y="-172.5" />
+      <point x="221.98690476190455" y="836.0" />
+      <point x="231.6869047619046" y="836.0" />
+      <point x="231.6869047619046" y="580.0" />
+      <point x="262.62499999999994" y="580.0" />
+      <point x="-73.875" y="88.5" />
+    </edge>
+    <edge source="uniformes.SastreSanJuan" target="atributosPrenda.Tela">
+      <point x="-74.57142857142856" y="-52.0" />
+      <point x="238.61547619047604" y="1231.0" />
+      <point x="45.782718894009236" y="1231.0" />
+      <point x="45.782718894009236" y="580.0" />
+      <point x="54.19999999999999" y="580.0" />
+      <point x="-72.79999999999995" y="100.5" />
+    </edge>
+    <edge source="uniformes.SastreSanJuan" target="uniformes.Sastre">
+      <point x="74.57142857142856" y="-52.0" />
+      <point x="387.75833333333316" y="1231.0" />
+      <point x="605.1754608294932" y="1231.0" />
+      <point x="-65.25" y="52.0" />
+    </edge>
+    <edge source="uniformes.SastreSanJuan" target="prendas.BuilderPrenda">
+      <point x="-37.28571428571422" y="-52.0" />
+      <point x="275.9011904761904" y="1221.0" />
+      <point x="161.1869047619046" y="1221.0" />
+      <point x="-76.0" y="172.5" />
+    </edge>
+    <edge source="prendas.Prenda" target="atributosPrenda.CategoriaPrenda">
+      <point x="88.12499999999994" y="-88.0" />
+      <point x="688.0504608294932" y="570.0" />
+      <point x="747.5" y="570.0" />
+      <point x="747.5" y="207.0" />
+      <point x="595.8183179723503" y="207.0" />
+      <point x="77.14285714285717" y="88.5" />
+    </edge>
+    <edge source="prendas.BuilderPrenda" target="atributosPrenda.CategoriaPrenda">
+      <point x="-106.39999999999986" y="-172.5" />
+      <point x="130.78690476190474" y="826.0" />
+      <point x="22.0" y="826.0" />
+      <point x="22.0" y="217.0" />
+      <point x="480.1040322580646" y="217.0" />
+      <point x="-38.571428571428555" y="88.5" />
+    </edge>
+    <edge source="uniformes.SastreSanJuan" target="prendas.Prenda">
+      <point x="37.285714285714334" y="-52.0" />
+      <point x="350.47261904761893" y="1221.0" />
+      <point x="529.4254608294932" y="1221.0" />
+      <point x="529.4254608294932" y="836.0" />
+      <point x="576.4254608294932" y="836.0" />
+      <point x="-23.5" y="88.0" />
+    </edge>
+    <edge source="prendas.BuilderPrenda" target="prendas.Prenda">
+      <point x="106.39999999999998" y="-172.5" />
+      <point x="343.5869047619046" y="816.0" />
+      <point x="482.4254608294932" y="816.0" />
+      <point x="-117.5" y="88.0" />
+    </edge>
+    <edge source="prendas.Prenda" target="atributosPrenda.Tela">
+      <point x="-123.37500000000006" y="-88.0" />
+      <point x="476.55046082949315" y="560.0" />
+      <point x="163.39999999999992" y="560.0" />
+      <point x="36.39999999999998" y="100.5" />
+    </edge>
+    <edge source="uniformes.Uniforme" target="uniformes.Sastre">
+      <point x="-74.66666666666669" y="-64.5" />
+      <point x="795.3291666666667" y="1231.0" />
+      <point x="735.6754608294932" y="1231.0" />
+      <point x="65.25" y="52.0" />
+    </edge>
+    <edge source="uniformes.Uniforme" target="prendas.Prenda">
+      <point x="0.0" y="-64.5" />
+      <point x="869.9958333333334" y="1231.0" />
+      <point x="811.4254608294932" y="1231.0" />
+      <point x="811.4254608294932" y="826.0" />
+      <point x="670.4254608294932" y="826.0" />
+      <point x="70.5" y="88.0" />
+    </edge>
+    <edge source="prendas.BuilderPrenda" target="atributosPrenda.Tela">
+      <point x="-45.59999999999991" y="-172.5" />
+      <point x="191.5869047619047" y="806.0" />
+      <point x="120.1754608294932" y="806.0" />
+      <point x="120.1754608294932" y="580.0" />
+      <point x="126.99999999999994" y="580.0" />
+      <point x="0.0" y="100.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6000000000000001" x="419.4761904761903" y="481.16666666666663" />
+  <SelectedNodes>
+    <node>uniformes.Sastre</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
