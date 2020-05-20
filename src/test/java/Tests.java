@@ -2,6 +2,7 @@ import accuWeather.AccuWeatherAPI;
 import atributosPrenda.CategoriaPrenda;
 import excepciones.DatoNecesarioException;
 import excepciones.TipoCategoriaNoCoincidenException;
+import jdk.internal.org.objectweb.asm.tree.analysis.Value;
 import org.junit.Assert;
 import org.junit.Test;
 import prendas.BuilderPrenda;
@@ -11,6 +12,9 @@ import atributosPrenda.TipoPrenda;
 import uniformes.Sastre;
 import uniformes.SastreSanJuan;
 import uniformes.Uniforme;
+
+import java.util.List;
+import java.util.Map;
 
 public class Tests {
     CategoriaPrenda calzado = CategoriaPrenda.CALZADO;
@@ -25,8 +29,13 @@ public class Tests {
         remera.tela(Tela.ALGODON);
         remera.temperaturaHasta(20);
         Prenda miRemera = remera.guardarPrenda();
-        AccuWeatherAPI clima = new AccuWeatherAPI();
-        Assert.assertEquals(20,clima.getWeather("Buenos Aires, Argentina"));
+    }
+
+    @Test
+    public void clima(){
+        AccuWeatherAPI apiClima = new AccuWeatherAPI();
+        List<Map<String, Object>> condicionesClimaticas = apiClima.getWeather("Buenos Aires, Argentina");
+        Assert.assertEquals(0,condicionesClimaticas.get(0).get("PrecipitationProbability"));
     }
 
     @Test(expected = TipoCategoriaNoCoincidenException.class)
