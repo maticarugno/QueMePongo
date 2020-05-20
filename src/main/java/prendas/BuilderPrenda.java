@@ -15,6 +15,7 @@ public class BuilderPrenda {
     Trama trama;
     String colorPrimario;
     String colorSecundario;
+    double temperaturaHasta;
 
         public void tipoPrenda(TipoPrenda tipoPrenda){
             if(tipoPrenda==null){throw new DatoNecesarioException("El tipo de la prenda no puede estar vacio");}
@@ -42,11 +43,14 @@ public class BuilderPrenda {
         public void colorSecundario(String colorSecundario){
             this.colorPrimario = colorSecundario;
         }
+        public void temperaturaHasta(double temperaturaHasta){
+            this.temperaturaHasta = temperaturaHasta;
+        }
 
         public Prenda guardarPrenda(){
             if (tipoPrenda.categoriaPrenda != categoriaPrenda) {
                 throw new TipoCategoriaNoCoincidenException("El tipo de prenda no coincide con la categoria");
             }
-            return new Prenda(tipoPrenda,categoriaPrenda,tela,trama,colorPrimario,colorSecundario);
+            return new Prenda(tipoPrenda,categoriaPrenda,tela,trama,colorPrimario,colorSecundario,temperaturaHasta);
         }
 }

@@ -1,6 +1,8 @@
+import accuWeather.AccuWeatherAPI;
 import atributosPrenda.CategoriaPrenda;
 import excepciones.DatoNecesarioException;
 import excepciones.TipoCategoriaNoCoincidenException;
+import org.junit.Assert;
 import org.junit.Test;
 import prendas.BuilderPrenda;
 import prendas.Prenda;
@@ -21,7 +23,10 @@ public class Tests {
         remera.cateriaPrenda(CategoriaPrenda.SUPERIOR);
         remera.colorPrimario("blanco");
         remera.tela(Tela.ALGODON);
+        remera.temperaturaHasta(20);
         Prenda miRemera = remera.guardarPrenda();
+        AccuWeatherAPI clima = new AccuWeatherAPI();
+        Assert.assertEquals(20,clima.getWeather("Buenos Aires, Argentina"));
     }
 
     @Test(expected = TipoCategoriaNoCoincidenException.class)
