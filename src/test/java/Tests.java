@@ -1,4 +1,5 @@
 import accuWeather.AccuWeatherAPI;
+import accuWeather.AccuWeatherMock;
 import accuWeather.Wheather;
 import atributosPrenda.CategoriaPrenda;
 import excepciones.DatoNecesarioException;
@@ -14,6 +15,7 @@ import uniformes.Sastre;
 import uniformes.SastreSanJuan;
 import uniformes.Uniforme;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -34,9 +36,10 @@ public class Tests {
 
     @Test
     public void clima(){
-        Wheather apiClima = new AccuWeatherAPI();
+        Wheather apiClima = new AccuWeatherMock();
         List<Map<String, Object>> condicionesClimaticas = apiClima.getWeather("Buenos Aires, Argentina");
-        Assert.assertEquals(0,condicionesClimaticas.get(0).get("PrecipitationProbability"));
+        HashMap<String, Object> temperatura = (HashMap<String, Object>) condicionesClimaticas.get(0).get("Temperature");
+        Assert.assertEquals(57,temperatura.get("Value"));
     }
 
     @Test(expected = TipoCategoriaNoCoincidenException.class)

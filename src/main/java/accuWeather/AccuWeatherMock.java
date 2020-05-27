@@ -1,9 +1,12 @@
 package accuWeather;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-public final class AccuWeatherAPI implements Wheather{
-
+public final class AccuWeatherMock implements Wheather{
+    @Override
     public final List<Map<String, Object>> getWeather(String ciudad) {
         return Arrays.asList(new HashMap<String, Object>(){{
             put("DateTime", "2019-05-03T01:00:00-03:00");
