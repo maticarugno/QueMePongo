@@ -15,7 +15,7 @@ public class BuilderPrenda {
     Trama trama;
     String colorPrimario;
     String colorSecundario;
-    double temperaturaHasta;
+    int temperaturaHasta;
 
         public void tipoPrenda(TipoPrenda tipoPrenda){
             if(tipoPrenda==null){throw new DatoNecesarioException("El tipo de la prenda no puede estar vacio");}
@@ -43,7 +43,7 @@ public class BuilderPrenda {
         public void colorSecundario(String colorSecundario){
             this.colorPrimario = colorSecundario;
         }
-        public void temperaturaHasta(double temperaturaHasta){
+        public void temperaturaHasta(int temperaturaHasta){
             this.temperaturaHasta = temperaturaHasta;
         }
 

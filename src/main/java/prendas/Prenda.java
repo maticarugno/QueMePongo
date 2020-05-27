@@ -12,10 +12,10 @@ public class Prenda {
     Trama trama;
     String colorPrimario;
     String colorSecundario;
-    double temperaturaHasta;
+    int temperaturaHasta;
 
     public Prenda(TipoPrenda tipoPrenda, CategoriaPrenda categoria, Tela tela, Trama trama,
-                  String color1, String color2, double temperaturaHasta){
+                  String color1, String color2, int temperaturaHasta){
         this.tipoPrenda = tipoPrenda;
         this.categoriaPrenda = categoria;
         this.tela = tela;
@@ -25,7 +25,7 @@ public class Prenda {
         this.temperaturaHasta = temperaturaHasta;
     }
 
-    public double getTemperaturaHasta(){
+    public int getTemperaturaHasta(){
         return temperaturaHasta;
     }
 

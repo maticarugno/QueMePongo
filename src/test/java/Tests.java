@@ -2,6 +2,8 @@ import accuWeather.AccuWeatherAPI;
 import accuWeather.AccuWeatherMock;
 import accuWeather.Wheather;
 import atributosPrenda.CategoriaPrenda;
+import clima.Clima;
+import clima.ObtenerClima;
 import excepciones.DatoNecesarioException;
 import excepciones.TipoCategoriaNoCoincidenException;
 import jdk.internal.org.objectweb.asm.tree.analysis.Value;
@@ -35,11 +37,9 @@ public class Tests {
     }
 
     @Test
-    public void obtengoLaTemperaturaDeBsAs(){
-        Wheather apiClima = new AccuWeatherAPI();
-        List<Map<String, Object>> condicionesClimaticas = apiClima.getWeather("Buenos Aires, Argentina");
-        HashMap<String, Object> temperatura = (HashMap<String, Object>) condicionesClimaticas.get(0).get("Temperature");
-        Assert.assertEquals(57,temperatura.get("Value"));
+    public void obtengoLaTemperaturaDeBsAsConelAdapter(){
+        Clima temperatura = new ObtenerClima();
+        Assert.assertEquals(57,temperatura.temperatura("Buenos Aires, Argentina"));
     }
 
     @Test

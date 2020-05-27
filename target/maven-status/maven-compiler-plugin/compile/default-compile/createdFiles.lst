@@ -1,11 +1,11 @@
 uniformes/SastreSanJuan.class
+uniformes/Sastre.class
+uniformes/Uniforme.class
+prendas/Prenda.class
+atributosPrenda/Trama.class
 atributosPrenda/Tela.class
 atributosPrenda/TipoPrenda.class
 excepciones/DatoNecesarioException.class
-uniformes/Sastre.class
 prendas/BuilderPrenda.class
-uniformes/Uniforme.class
 uniformes/SastreJohnson.class
-prendas/Prenda.class
-atributosPrenda/Trama.class
 atributosPrenda/CategoriaPrenda.class
