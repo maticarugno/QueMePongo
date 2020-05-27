@@ -1,4 +1,5 @@
 import accuWeather.AccuWeatherAPI;
+import accuWeather.Wheather;
 import atributosPrenda.CategoriaPrenda;
 import excepciones.DatoNecesarioException;
 import excepciones.TipoCategoriaNoCoincidenException;
@@ -33,7 +34,7 @@ public class Tests {
 
     @Test
     public void clima(){
-        AccuWeatherAPI apiClima = new AccuWeatherAPI();
+        Wheather apiClima = new AccuWeatherAPI();
         List<Map<String, Object>> condicionesClimaticas = apiClima.getWeather("Buenos Aires, Argentina");
         Assert.assertEquals(0,condicionesClimaticas.get(0).get("PrecipitationProbability"));
     }

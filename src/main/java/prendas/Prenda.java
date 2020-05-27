@@ -25,5 +25,9 @@ public class Prenda {
         this.temperaturaHasta = temperaturaHasta;
     }
 
+    public double getTemperaturaHasta(){
+        return temperaturaHasta;
+    }
+
 
 }
