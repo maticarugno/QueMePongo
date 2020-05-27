@@ -35,7 +35,15 @@ public class Tests {
     }
 
     @Test
-    public void clima(){
+    public void obtengoLaTemperaturaDeBsAs(){
+        Wheather apiClima = new AccuWeatherAPI();
+        List<Map<String, Object>> condicionesClimaticas = apiClima.getWeather("Buenos Aires, Argentina");
+        HashMap<String, Object> temperatura = (HashMap<String, Object>) condicionesClimaticas.get(0).get("Temperature");
+        Assert.assertEquals(57,temperatura.get("Value"));
+    }
+
+    @Test
+    public void obtengoLaTemperaturaUsandoElMock(){
         Wheather apiClima = new AccuWeatherMock();
         List<Map<String, Object>> condicionesClimaticas = apiClima.getWeather("Buenos Aires, Argentina");
         HashMap<String, Object> temperatura = (HashMap<String, Object>) condicionesClimaticas.get(0).get("Temperature");
