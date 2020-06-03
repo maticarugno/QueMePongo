@@ -9,27 +9,18 @@ import java.util.stream.Collectors;
 
 public class Usuario implements GeneradorSugerencias{
     String ciudad;
-    List<Prenda> prendas = new ArrayList<>();
     List<Guardarropa> guardarropas = new ArrayList<>();
 
     public Usuario(String ciudad){
         this.ciudad = ciudad;
     }
 
-    public void agregarPrenda(Prenda prenda){
-        prendas.add(prenda);
+    public void agregarPrenda(Prenda prenda, Guardarropa guardarropa){
+        guardarropa.agregarPrenda(prenda);
     }
 
-    public List<Sugerencia> obtenerSugerencia(){
-        //buscar prendas aptas y llamar a generarSugerenciaDesde
-        return generarSugerenciaDesde(prendasAptas());
-    }
-
-    public List<Prenda> prendasAptas(){
-        Wheather temperatura = new AccuWeatherMock();
-        return this.prendas.stream()
-                .filter(prenda -> prenda.getTemperaturaHasta() > temperatura.getTemperatura(ciudad))
-                .collect(Collectors.toList());
+    public List<Sugerencia> obtenerSugerencia(Guardarropa guardarropa){
+        return generarSugerenciaDesde(guardarropa.prendasAptas(this.ciudad));
     }
 
     @Override
