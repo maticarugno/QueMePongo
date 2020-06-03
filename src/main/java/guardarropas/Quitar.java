@@ -15,4 +15,9 @@ public class Quitar implements Propuesta{
     public void aplicar() {
         this.guardarropa.quitarPrenda(this.prenda);
     }
+
+    @Override
+    public void deshacer() {
+        this.guardarropa.agregarPrenda(this.prenda);
+    }
 }
