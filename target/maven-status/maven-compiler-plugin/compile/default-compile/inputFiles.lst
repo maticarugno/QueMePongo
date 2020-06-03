@@ -1,6 +1,6 @@
 /home/maticarugno/IdeaProjects/Workspace/queMePongo/src/main/java/accuWeather/Wheather.java
 /home/maticarugno/IdeaProjects/Workspace/queMePongo/src/main/java/accuWeather/AccuWeatherAPI.java
-/home/maticarugno/IdeaProjects/Workspace/queMePongo/src/main/java/clima/Clima.java
+/home/maticarugno/IdeaProjects/Workspace/queMePongo/src/main/java/accuWeather/ServicioAccuWeather.java
 /home/maticarugno/IdeaProjects/Workspace/queMePongo/src/main/java/Sugerencia.java
 /home/maticarugno/IdeaProjects/Workspace/queMePongo/src/main/java/uniformes/Uniforme.java
 /home/maticarugno/IdeaProjects/Workspace/queMePongo/src/main/java/atributosPrenda/TipoPrenda.java
@@ -13,7 +13,6 @@
 /home/maticarugno/IdeaProjects/Workspace/queMePongo/src/main/java/accuWeather/AccuWeatherMock.java
 /home/maticarugno/IdeaProjects/Workspace/queMePongo/src/main/java/GeneradorSugerencias.java
 /home/maticarugno/IdeaProjects/Workspace/queMePongo/src/main/java/prendas/Prenda.java
-/home/maticarugno/IdeaProjects/Workspace/queMePongo/src/main/java/clima/ObtenerClima.java
 /home/maticarugno/IdeaProjects/Workspace/queMePongo/src/main/java/atributosPrenda/Tela.java
 /home/maticarugno/IdeaProjects/Workspace/queMePongo/src/main/java/atributosPrenda/CategoriaPrenda.java
 /home/maticarugno/IdeaProjects/Workspace/queMePongo/src/main/java/uniformes/Sastre.java

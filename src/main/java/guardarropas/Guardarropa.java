@@ -12,12 +12,16 @@ public class Guardarropa {
     String nombre;
     List<Prenda> prendas = new ArrayList<>();
 
+
     public Guardarropa(String nombre){
         this.nombre = nombre;
     }
 
     public void agregarPrenda(Prenda prenda){
         prendas.add(prenda);
+    }
+    public void quitarPrenda(Prenda prenda){
+        prendas.remove(prenda);
     }
 
     public List<Prenda> prendasAptas(String ciudad){

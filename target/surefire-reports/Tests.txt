@@ -1,14 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: Tests
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.071 sec <<< FAILURE!
-clima(Tests)  Time elapsed: 0.005 sec  <<< FAILURE!
-java.lang.AssertionError: expected:<0> but was:<{UnitType=18, Value=57, Unit=F}>
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:118)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at Tests.clima(Tests.java:41)
+Tests run: 6, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.066 sec <<< FAILURE!
+asd(Tests)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException
+	at Usuario.agregarPrenda(Usuario.java:13)
+	at Tests.asd(Tests.java:48)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
