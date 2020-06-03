@@ -1,13 +1,22 @@
-import clima.Clima;
-import clima.ObtenerClima;
+import accuWeather.AccuWeatherMock;
+import accuWeather.Wheather;
 import prendas.Prenda;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class Usuario implements GeneradorSugerencias{
     String ciudad;
-    List<Prenda> prendas;
+    List<Prenda> prendas = new ArrayList<>();
+
+    public Usuario(String ciudad){
+        this.ciudad = ciudad;
+    }
+
+    public void agregarPrenda(Prenda prenda){
+        prendas.add(prenda);
+    }
 
     public List<Sugerencia> obtenerSugerencia(){
         //buscar prendas aptas y llamar a generarSugerenciaDesde
@@ -15,9 +24,9 @@ public class Usuario implements GeneradorSugerencias{
     }
 
     public List<Prenda> prendasAptas(){
-        Clima temperatura = new ObtenerClima();
+        Wheather temperatura = new AccuWeatherMock();
         return this.prendas.stream()
-                .filter(prenda -> prenda.getTemperaturaHasta() > temperatura.temperatura(ciudad))
+                .filter(prenda -> prenda.getTemperaturaHasta() > temperatura.getTemperatura(ciudad))
                 .collect(Collectors.toList());
     }
 

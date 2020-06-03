@@ -1,12 +1,9 @@
-import accuWeather.AccuWeatherAPI;
 import accuWeather.AccuWeatherMock;
 import accuWeather.Wheather;
 import atributosPrenda.CategoriaPrenda;
-import clima.Clima;
-import clima.ObtenerClima;
+import atributosPrenda.Trama;
 import excepciones.DatoNecesarioException;
 import excepciones.TipoCategoriaNoCoincidenException;
-import jdk.internal.org.objectweb.asm.tree.analysis.Value;
 import org.junit.Assert;
 import org.junit.Test;
 import prendas.BuilderPrenda;
@@ -36,18 +33,20 @@ public class Tests {
         Prenda miRemera = remera.guardarPrenda();
     }
 
+
     @Test
-    public void obtengoLaTemperaturaDeBsAsConelAdapter(){
-        Clima temperatura = new ObtenerClima();
-        Assert.assertEquals(57,temperatura.temperatura("Buenos Aires, Argentina"));
+    public void obtengoLaTemperatura(){
+        Wheather apiClima = new AccuWeatherMock();
+        Assert.assertEquals(57,apiClima.getTemperatura("Buenos Aires, Argentina"));
     }
 
     @Test
-    public void obtengoLaTemperaturaUsandoElMock(){
-        Wheather apiClima = new AccuWeatherMock();
-        List<Map<String, Object>> condicionesClimaticas = apiClima.getWeather("Buenos Aires, Argentina");
-        HashMap<String, Object> temperatura = (HashMap<String, Object>) condicionesClimaticas.get(0).get("Temperature");
-        Assert.assertEquals(57,temperatura.get("Value"));
+    public void creoUnaPrendaApta(){
+        Usuario usuario = new Usuario("Buenos Aires, Argentina");
+        Prenda remera = new Prenda(TipoPrenda.REMERA,CategoriaPrenda.SUPERIOR,Tela.ALGODON, Trama.CUADROS,
+                "blanca",null,60);
+        usuario.agregarPrenda(remera);
+        Assert.assertTrue(usuario.prendasAptas().contains(remera));
     }
 
     @Test(expected = TipoCategoriaNoCoincidenException.class)
