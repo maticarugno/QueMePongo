@@ -1,5 +1,6 @@
 import accuWeather.AccuWeatherMock;
 import accuWeather.Wheather;
+import guardarropas.Guardarropa;
 import prendas.Prenda;
 
 import java.util.ArrayList;
@@ -9,6 +10,7 @@ import java.util.stream.Collectors;
 public class Usuario implements GeneradorSugerencias{
     String ciudad;
     List<Prenda> prendas = new ArrayList<>();
+    List<Guardarropa> guardarropas = new ArrayList<>();
 
     public Usuario(String ciudad){
         this.ciudad = ciudad;
