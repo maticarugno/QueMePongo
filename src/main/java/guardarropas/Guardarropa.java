@@ -9,13 +9,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Guardarropa {
-    String nombre;
     List<Prenda> prendas = new ArrayList<>();
-
-
-    public Guardarropa(String nombre){
-        this.nombre = nombre;
-    }
 
     public void agregarPrenda(Prenda prenda){
         prendas.add(prenda);
@@ -31,5 +25,7 @@ public class Guardarropa {
                 .collect(Collectors.toList());
     }
 
-
+    public List<Prenda> getPrendas() {
+        return prendas;
+    }
 }

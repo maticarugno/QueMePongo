@@ -14,6 +14,10 @@ public class Usuario implements GeneradorSugerencias{
     List<Propuesta> propuestas = new ArrayList<>();
     List<Propuesta> propuestasAplicadas = new ArrayList<>();
 
+    public Usuario(String ciudad){
+        this.ciudad = ciudad;
+    }
+
     public void agregarPropuesta(Propuesta propuesta){
         propuestas.add(propuesta);
     }
@@ -21,24 +25,17 @@ public class Usuario implements GeneradorSugerencias{
     public void aplicarPropuesta(int posicionPropuesta){
         Propuesta propuesta = propuestas.get(posicionPropuesta);
         propuesta.aplicar();
+        propuestasAplicadas.add(propuesta);
         propuestas.remove(propuesta);
     }
     public void deshacerPropuesta(int posicionPropuesta){
-        Propuesta propuesta = propuestas.get(posicionPropuesta);
+        Propuesta propuesta = propuestasAplicadas.get(posicionPropuesta);
         propuesta.deshacer();
-        propuestas.remove(propuesta);
+        propuestasAplicadas.remove(propuesta);
     }
 
     public List<Propuesta> getPropuestas(){
         return propuestas;
-    }
-
-    public Usuario(String ciudad){
-        this.ciudad = ciudad;
-    }
-
-    public void agregarPrenda(Prenda prenda, Guardarropa guardarropa){
-        guardarropa.agregarPrenda(prenda);
     }
 
     public void agregarGuardarropa(Guardarropa guardarropa){
